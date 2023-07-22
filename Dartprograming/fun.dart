@@ -1,4 +1,13 @@
 /*
-There are 4 types function
-1) without without
+function datatype function_name(){
+  function body;
+}
 */
+
+void main() {
+  dum();
+}
+
+void dum() {
+  print("This is function");
+}
