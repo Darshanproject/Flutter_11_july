@@ -27,8 +27,7 @@ class _RandomColorAppState extends State<RandomColorApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text('Random Color App'),
         ),
@@ -47,9 +46,8 @@ class _RandomColorAppState extends State<RandomColorApp> {
             ),
           ),
         ),
-      ),
     );
   }
 }
 
-void main() => runApp(RandomColorApp());
+
