@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:myapp2/Screens/Home.dart';
+
+import 'Todo.dart';
+//import 'package:flutter/material.dart';
 
 class Todo {
   final String title;
@@ -7,22 +11,7 @@ class Todo {
   const Todo(this.title, this.description);
 }
 
-void main() {
-  runApp(
-    MaterialApp(
-      title: 'Passing Data',
-      home: TodosScreen(
-        todos: List.generate(
-          20,
-          (i) => Todo(
-            'Todo $i',
-            'A description of what needs to be done for Todo $i',
-          ),
-        ),
-      ),
-    ),
-  );
-}
+
 
 class TodosScreen extends StatelessWidget {
   const TodosScreen({super.key, required this.todos});

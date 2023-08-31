@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Second_Exmaple extends StatelessWidget {
-  const Second_Exmaple({super.key});
+  var name;
+  Second_Exmaple(this.name);
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      child: Text("First",style: TextStyle(fontSize: 35),),
+    return  Scaffold(
+      body: Center(
+        child: Container(
+          child: Text("Welcome $name",style: TextStyle(fontSize: 35),),
+        ),
+      ),
     );
   }
 }
